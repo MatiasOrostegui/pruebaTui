@@ -1,0 +1,383 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.inicio,
+.servicios,
+.ajustes {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+/*
+por "id"
+#{}
+
+
+por "class o calssName"
+.{}
+
+por tag <p>  y class o classname = center se puede tener mas de una clase
+p.center{}
+
+
+universal
+* {}
+
+por grupos
+h1, h2, p {}
+
+*/
+
+
+
+.contenedorGeneral{
+  margin: 4% 20% 0px 20%;
+  position: relative;
+  width: 60%;
+  min-width: 100px;
+  border-style: groove;
+}
+
+.contenedor {
+  margin: 0px 3% 0px 3%;
+  width: 94%;
+  position: relative;
+  min-width: 100px;
+  border-style: groove;
+}
+
+
+
+.textareaDatosMasivo {
+  width: 100%;
+  margin-top: 50px;
+}
+.inicio {
+  /*background-image: url('./images/img-1.jpg');*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0);
+  font-size: 100px;
+}
+
+.servicios {
+  /*background-image: url('./images/img-2.jpg');*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0);
+  font-size: 100px;
+}
+
+.ajustes {
+  /*background-image: url('./images/img-7.jpg');*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0);
+  font-size: 100px;
+}
+
+
+
+
+
+
+
+.cargado{
+  position: absolute;
+  padding: 9px 18px;
+  border-radius: 4px;
+  top: -80px;
+  left: 0;
+  width: 75%;
+  height: 48PX;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(19, 219, 29);
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+}
+
+.cargado::before {
+  position: absolute;
+  left: 0;
+  width: 100px;
+  padding: 9px 18px;
+  border-radius: 4px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  height: 48PX;
+  color: #fff;
+  cursor: pointer;
+  background-color: var(--primary);
+  content: ' CARGAR';
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+.cargado:hover {
+  padding: 9px 18px;
+  transition: all 0.3s ease-out;
+  color: #fff;
+  height: 48PX;
+  border-left-color: var(--primary);
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+  background-color: rgb(19, 219, 29);
+}
+
+.cargado::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+
+
+
+.btn_seleccionar{
+  position: absolute;
+  padding: 9px 18px;
+  border-radius: 4px;
+  top: -80px;
+  left: 0;
+  width: 75%;
+  height: 48PX;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary);
+  color: transparent;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+}
+
+.btn_seleccionar::before {
+  position: absolute;
+  left: 0;
+  width: 100PX;
+  padding: 9px 18px;
+  border-radius: 4px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  height: 48PX;
+  color: #fff;
+  cursor: pointer;
+  background-color: var(--primary);
+  content: ' CARGAR';
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+.btn_seleccionar:hover {
+  padding: 9px 18px;
+  transition: all 0.3s ease-out;
+  color: #fff;
+  height: 48PX;
+  border-left-color: var(--primary);
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+  background-color: black;
+}
+
+
+.btn_seleccionar::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+
+
+
+
+.btn_descargar {
+  position: absolute;
+  top: -20px;
+  padding: 9px 18px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  width: 75%;
+  height: 48PX;
+  color: var(--primary);
+  cursor: pointer;
+  background-color: var(--primary);
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+}
+
+.btn_descargar::before {
+  content: 'DECARGAR';
+  position: absolute;
+  top: 9px;
+  width: 100PX;
+  left: 0;
+  padding: 9px 18px;
+  border-radius: 4px;
+  font-size: 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  height: 20PX;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--primary);
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+.btn_descargar:hover {
+  padding: 9px 18px;
+  height: 48px;
+  transition: all 0.3s ease-out;
+  color: #fff;
+  border-left-color: var(--primary);
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+  background-color: black;
+}
+
+
+.unico {
+  margin: 40px 30% 80px 30%;
+}
+
+.tituloUnico{
+  margin: 0px 5% 5px 5%;
+  color: rgb(90, 90, 90);
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+.selectUnicoSede{
+  margin: 0px 5% 5px 5%;
+  width: 90%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px; 
+}
+.selectUnicoFuncion{
+  margin: 0px 5% 5px 5%;
+  width: 90%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px; 
+}
+
+.radiUnicoSexo{
+  margin: 0px 20% 10px 20%;
+  width: 60%;
+  text-align: center;
+}
+
+
+
+.inputUnicoRut{
+  margin: 0px 5% 5px 5%;
+  width: 90%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px; 
+}
+.inputUnicoNombre{
+  margin: 0px 5% 5px 5%;
+  width: 90%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;  
+}
+.inputUnicoApellidoPaterno{
+  margin: 0px 5% 5px 5%;
+  width: 90%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;  
+}
+.inputUnicoApellidoMaterno{
+  margin: 0px 5% 5px 5%;
+  width: 90%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px; 
+}
+
+
+.btnUnicoCargar{
+  margin: 0px 5% 5px 5%;
+  width: 90%;
+  height: 30px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px; 
+  color: #fff;
+  background-color: var(--primary);
+  -webkit-user-select: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btnUnicoDescargar{
+  margin: 20px 0% 10px 0%;
+  width: 100%;
+  height: 30px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px; 
+  color: #fff;
+  background-color: var(--primary);
+  -webkit-user-select: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.textareaDatosUnico{
+  width: 100%;
+  margin-top: 5px;
+  height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tituloMasivo{
+  margin: 0px 5% 5px 5%;
+  color: rgb(90, 90, 90);
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+}

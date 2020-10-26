@@ -1,0 +1,65 @@
+:root {
+    --primary: #1888ff;
+    }
+
+    .btn-unico{
+        position: absolute;
+        height: 48PX;
+        width: 40%;
+        left: 30%;
+        padding: 13px 18px;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        background-color: var(--primary);
+    }
+
+    .btn-unico:hover {
+        position: absolute;
+        height: 48PX;
+        width: 40%;
+        left: 30%;
+        padding: 13px 18px;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        color: var(--primary);
+        cursor: pointer;
+        background-color: black;
+      }
+
+      .btn-masivo{
+        position: absolute;
+        height: 48PX;
+        width: 40%;
+        left: 30%;
+        top: 100px;
+        padding: 13px 18px;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        background-color: var(--primary);
+      }
+      .btn-masivo:hover {
+        position: absolute;
+        height: 48PX;
+        width: 40%;
+        left: 30%;
+        top: 100px;
+        padding: 13px 18px;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        color: var(--primary);
+        cursor: pointer;
+        background-color: black;
+      }
+      A {text-decoration: none;} 
